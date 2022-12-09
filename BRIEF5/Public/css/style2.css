@@ -198,7 +198,7 @@ margin-top: 4%;
   left: 359px;
   padding: 29px;
   border-radius: 10px;
-  box-shadow: -19px 0px 1px #979700;
+  box-shadow: -19px 0px 1px rgb(255,193,7);
 }
 .frominput{
   border-bottom:1px solid rgb(71, 71, 71);

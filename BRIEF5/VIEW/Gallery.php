@@ -293,6 +293,35 @@
           </div>
         </div>
       </div>
+
+      <!-- -------------------------------------------------------------- --> 
+      <?php
+      foreach($products as $row){
+        ?>
+
+      
+      <div class="box">
+          <div class="name">
+            <h6>
+             <?php echo $row['name'] ?>
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="../IMAGE2/BRACELET1.png" alt="bracelt">
+          </div>
+          <div class="detail-box">
+            <h5>
+              $<span><?php echo $row['prix'] ?></span>
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+      <?php 
+    } ?>
+      
+      <!-- -------------------------------------------------------------- -->
       
     </div>
   </section> 

@@ -18,19 +18,20 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="../Public/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Poppins:400,600,700&display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="../Public/css/style.css" rel="stylesheet"/>
+  <link href="../css/style.css" rel="stylesheet"/>
   <!-- responsive style -->
-  <link href="../Public/css/responsive.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../Public/css/style2.css"/>
+  <link href="../css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style2.css"/>
   
 </head>
 
 <body>
+ 
 <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -47,10 +48,10 @@
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="Home.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.php"> About</a>
+                  <a class="nav-link" href="about"> About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="Gallery.php"> Gallery</a>
