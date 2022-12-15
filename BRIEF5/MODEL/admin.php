@@ -1,16 +1,10 @@
+
 <?php
-   
-   
-
- 
-     
-     
-
-
+session_start();
 class admin extends DatabaseController
 {
    private $conn ;
-   protected $sql;
+   private $selectadmin;
      
    public function __Construct()
    {
@@ -18,12 +12,14 @@ class admin extends DatabaseController
     $this->conn = $this->connection();
 
       } 
-    public function check_login() {
-      $sql = "SELECT * FROM admin ";
-       $this->sql= mysqli_query($this->conn,$sql);
+    public function check_login($email,$password) {
+      
+      $this->conn = $this->connection();
+       $this->selectadmin= mysqli_query($this->conn,"SELECT * FROM `admin` WHERE  email = '$email' && password = '$password' ");
        
-       if($this->sql){
-        return $this->sql;
+       if($this->selectadmin){
+      
+        return $this->selectadmin;
        
      }
        

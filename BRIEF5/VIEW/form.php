@@ -1,5 +1,5 @@
 
-<form class="form"  method="POST">
+<form class="form" action="<?php url("login/admin") ?>"  method="POST">
    <div class="mb-3 ">
      <input type="email" name="emaillogin" placeholder="e-mail" class=" frominput form-control" id="exampleInputEmail1" aria-describedby="emailHelp">  
    <div class="mb-3 ">

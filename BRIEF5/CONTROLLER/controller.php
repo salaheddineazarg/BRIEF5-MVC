@@ -17,7 +17,7 @@ class controller
     //---------------------------------------
      private function prepareUrl()
      {
-      $url= $_SERVER['REQUEST_URI'];
+      $url=$_SERVER['REQUEST_URI'];
     
        
       if(isset($url))

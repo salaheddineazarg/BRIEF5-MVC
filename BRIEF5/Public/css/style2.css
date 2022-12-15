@@ -25,9 +25,11 @@
 
 .C {
  
-  margin-top: 20%;
+  margin-top: 30px;
   background-color: #dfbc7a;
 }
+
+
 
 .RINGS {
   font-family: 'Inter';
@@ -204,4 +206,14 @@ margin-top: 4%;
   border-bottom:1px solid rgb(71, 71, 71);
   background-color: #000000;
   margin-top: 15px;
+}
+.gestionadmin{
+  background-color: #dfbc7a;
+ 
+}
+/* bodyadd */
+.bodyadd{
+  background-image: url(https://i.pinimg.com/564x/a0/4b/40/a04b406e1218edd131a9dd15ef17b33b.jpg);
+  width: 100%;
+  height: 90vh;
 }

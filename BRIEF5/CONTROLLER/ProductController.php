@@ -6,8 +6,6 @@ class ProductController
      $db= new product();
      $data['products']=$db->getAllProducts();
      View::load("gallery",$data);
-
-     
     }
 }
 ?> 
