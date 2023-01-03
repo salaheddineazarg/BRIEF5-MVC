@@ -1,4 +1,9 @@
+<?php session_start(); 
+ 
+?>
+
 <?php include (view.'include/header.php')?>
+
 <body class="gestionadmin">
 
 <nav class="cnav navbar navbar-expand-lg custom_nav-container ">
@@ -50,7 +55,7 @@
             <h6>
              <?php echo $row['name'] ?>
             </h6>
-        
+            
           </div>
           <div class="img-box">
             <img src="<?php url('Public/IMAGE2/'.$row['image'])?>" alt="bracelt">

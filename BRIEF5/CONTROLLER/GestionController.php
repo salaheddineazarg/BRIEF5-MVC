@@ -5,14 +5,20 @@ class GestionController extends LoginController {
  public function index() 
 
  { 
-  
-   
-   $db= new product();
+  if ($_SESSION['check'] != true) {
+    header('location:' . url2('login/index'));
+    
+  } else if ($_SESSION['check'] = true)  {
+    $db= new product();
     $data['products']=$db->getAllProducts();
    
 
        View::load('gestion',$data);
       
+    header('location:' . url2('gestion/index'));
+  }
+   
+   
    
     
  
@@ -55,8 +61,7 @@ class GestionController extends LoginController {
      $products=new product;
      $products->insertproduct($_POST['name'],$newImageName, $_POST['price']);
      
-     header("Location:index");
-   sleep(1);
+  
     echo "<script>alert('Invalid  Image Extension');</script>";
  }
  

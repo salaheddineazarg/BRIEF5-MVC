@@ -1,6 +1,6 @@
 
 <?php
-
+session_start();
 class LoginController extends DatabaseController {
    public function index() 
   
@@ -21,17 +21,19 @@ class LoginController extends DatabaseController {
       $admin=new admin;
       $auth=$admin-> check_login($emaillogin,$passwordlogin);
    if(mysqli_num_rows($auth)>0) { 
-     
-          
-        $url=url2('gestion/index');
-      header("Location:".$url); 
+       
+          $_SESSION['check'] = $emaillogin;
+
+          header("location:".url2('gestion/index'));
+      
       
 
      
     }else{ 
-          
-        header("Location:index"); 
-        $_SESSION['login']=false;
+      $_SESSION['check'] == false;
+      header("location:".url2('login/index'));
+ 
+     
          
        }
    }

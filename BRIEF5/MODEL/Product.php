@@ -8,7 +8,7 @@ class product extends DatabaseController
    private $add;
    private $delete;
    private $getrow;
-   protected $update; 
+   private $update; 
      
    public function __Construct()
    {
