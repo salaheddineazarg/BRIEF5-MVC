@@ -55,6 +55,8 @@
             <h6>
              <?php echo $row['name'] ?>
             </h6>
+          
+         
             
           </div>
           <div class="img-box">
